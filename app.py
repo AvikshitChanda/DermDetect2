@@ -3,8 +3,27 @@ import streamlit as st
 import os
 import numpy as np
 from tensorflow.keras.models import load_model
+from tensorflow.keras.applications import MobileNet, ResNet101
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.utils import to_categorical
 from PIL import Image
 import cv2
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import LabelEncoder
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import GridSearchCV
+import pywt
+from skimage.feature import graycomatrix
+from skimage import io, color
+from skimage import feature
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from skimage.feature import local_binary_pattern
+from skimage.transform import resize
+from mahotas.features import haralick
 
 st.set_page_config(
     page_title="DermDetect",
