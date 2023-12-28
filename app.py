@@ -17,7 +17,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from skimage.feature import local_binary_pattern
+
 from mahotas.features import haralick
 
 st.set_page_config(
