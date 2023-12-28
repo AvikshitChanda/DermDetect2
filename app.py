@@ -17,8 +17,9 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
 from mahotas.features import haralick
+
+
 
 st.set_page_config(
     page_title="DermDetect",
@@ -28,6 +29,8 @@ st.set_page_config(
 target_size = (224, 224)
 st.title("Skin Disease Prediction")
 
+backimg=Image.open("background.png")
+st.image(backimg)
 
 st.markdown(
     """
@@ -35,9 +38,8 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         body {
             font-family: 'Poppins', sans-serif;
-            background-image: url("https://img.freepik.com/free-photo/medium-shot-smiley-doctor-patient-chatting_23-2149351657.jpg?w=1060&t=st=1703710088~exp=1703710688~hmac=8aa5bbd3f1892e2d21d24ae0dafc21664dcb84b2c24b9809028367c297055441");
-            background-size: cover;
             color: #333333;
+             background-color:#CDF0EA;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -46,28 +48,54 @@ st.markdown(
             margin-bottom:60px;
             overflow: hidden;
         }
+        [data-testid="stHeader"]{
+            height:0px;
+            width:0px;
+        }
+        
            .stApp {
-
-            max-width: 700px;
-            height: 680px;
-            margin: 50px 0 0 20px;
+            
+            max-width: 1200px;
+            height: 690px;
+            margin: 40px 0px 0px 150px; 
              border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color:#F5F7F8;
+        
 
         }
+        
         [data-testid="block-container"]{
             padding:0;
             
         }
-        [data-testid="stText"]{
-            font-size:23px;
+        [data-testid="stMarkdownContainer"] p{
+            font-size:27px;
+            margin-left:25px;
+            color:#86B6F6;
             font-weight:600;
+        }
+        [data-testid="stFileUploadDropzone"]{
+            background-color:#F5F7F8;
+            
+          margin-top:20px;
+        }
+        [data-testid="stText"]{
+            font-size:20px;
+            font-weight:600;
+        }
+        [data-testid="stImage"] img{
+            border-radius:15px;
+            margin-left:20px;
+            margin-top:20px;
         }
 
         [data-testid="StyledLinkIconContainer"]{
             color:#86B6F6;
             text-align:center;
             margin-top:-10px
+        }
+        [data-testid="stMarkdownContainer"] h2{
+            margin-right:30px;
         }
         
         .stHeader {
