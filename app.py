@@ -16,13 +16,8 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
-import pywt
-from skimage.feature import graycomatrix
-from skimage import io, color
-from skimage import feature
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from skimage.feature import local_binary_pattern
-from skimage.transform import resize
 from mahotas.features import haralick
 
 st.set_page_config(
