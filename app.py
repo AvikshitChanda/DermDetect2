@@ -49,11 +49,15 @@ st.markdown(
            .stApp {
 
             max-width: 700px;
-            height: 690px;
+            height: 680px;
             margin: 50px 0 0 20px;
              border-radius: 15px;
             background-color: rgba(255, 255, 255, 0.8);
 
+        }
+        [data-testid="block-container"]{
+            padding:0;
+            
         }
         [data-testid="stText"]{
             font-size:23px;
@@ -65,10 +69,7 @@ st.markdown(
             text-align:center;
             margin-top:-10px
         }
-        [data-testid="block-container"]{
-            overflow:hidden;
-
-        }
+        
         .stHeader {
             background-color: rgba(134, 182, 246, 0.8);
             color: #ffffff;
@@ -87,9 +88,12 @@ st.markdown(
         .stTitle {
                 text-align:center;
         }
+        scroll-recommendation recommendation-text{
+            overflow-y: auto;
+        }
         .scroll-recommendation {
             max-height: 300px;
-            overflow-y: auto;
+             
         }
         .recommendation-text {
             font-size: 22px; 
