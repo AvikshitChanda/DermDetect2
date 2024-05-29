@@ -93,7 +93,7 @@ st.markdown(
         }
         h1{
         color:#333333;
-         margin-left:120px;
+         
         }
         [data-testid="StyledLinkIconContainer"]{
             color:#86B6F6;
