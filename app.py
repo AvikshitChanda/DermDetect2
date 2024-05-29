@@ -3,21 +3,8 @@ import streamlit as st
 import os
 import numpy as np
 from tensorflow.keras.models import load_model
-from tensorflow.keras.applications import MobileNet, ResNet101
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import to_categorical
 from PIL import Image
 import cv2
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import LabelEncoder
-from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import GridSearchCV
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from mahotas.features import haralick
 
 
 
@@ -63,6 +50,16 @@ st.markdown(
         
 
         }
+        [data-testid="stFileUploaderDropzone"]{
+            background-color:#EEEEEE;
+          
+            border-radius:12px
+        }
+        
+        [data-testid="stFileUploaderDropzoneInstructions"]{
+         color:#151515
+        }
+        
         
         [data-testid="block-container"]{
             padding:0;
@@ -71,13 +68,16 @@ st.markdown(
         [data-testid="stMarkdownContainer"] p{
             font-size:27px;
             margin-left:25px;
-            color:#86B6F6;
+            color:#151515;
             font-weight:600;
         }
         [data-testid="stFileUploadDropzone"]{
             background-color:#F5F7F8;
             
           margin-top:20px;
+        }
+        [data-testid="stVerticalBlock"]{
+         color:#151515;
         }
         [data-testid="stText"]{
             font-size:20px;
@@ -88,7 +88,10 @@ st.markdown(
             margin-left:20px;
             margin-top:20px;
         }
-
+        h1{
+        color:#333333;
+         margin-left:120px;
+        }
         [data-testid="StyledLinkIconContainer"]{
             color:#86B6F6;
             text-align:center;
