@@ -68,8 +68,11 @@ st.markdown(
         [data-testid="stMarkdownContainer"] p{
             font-size:27px;
             margin-left:25px;
-            color:#151515;
+            color:#86B6F6;
             font-weight:600;
+        }
+        [data-testid="baseButton-secondary"]{
+            color:#fff
         }
         [data-testid="stFileUploadDropzone"]{
             background-color:#F5F7F8;
