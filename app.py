@@ -73,7 +73,7 @@ st.markdown(
         }
         [data-testid="stFileUploadDropzone"]{
             background-color:#F5F7F8;
-            
+            color:#151515;
           margin-top:20px;
         }
         [data-testid="stVerticalBlock"]{
