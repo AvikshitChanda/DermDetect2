@@ -1,7 +1,7 @@
-# DermDetect(https://dermdetect16.onrender.com/) 🩺
+# DermDetect 🩺
 
-DermDetect is a web application that leverages deep learning to predict skin diseases from uploaded images. It provides predictions along with severity levels and recommendations for further action.
-
+DermDetect is a web application that leverages deep learning to predict skin diseases from uploaded images. It provides predictions along with severity levels and recommendations for further action.<br>
+link to website:[DermDetect](https://dermdetect16.onrender.com/)
 ## Table of Contents 📋
 
 - [Overview](#overview)
