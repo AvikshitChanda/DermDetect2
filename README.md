@@ -15,7 +15,7 @@ link to website:[DermDetect](https://dermdetect16.onrender.com/)
 
 ## Overview 🌟
 
-DermDetect is designed to assist in the preliminary screening of skin diseases by analyzing images of skin lesions. It uses a pre-trained deep learning model to classify the skin condition into three categories: Common Nevus, Atypical Nevus, and Melanoma. The app also provides a severity level and recommendations based on the prediction.
+DermDetect is designed to assist in the preliminary screening of skin diseases by analyzing images of skin lesions. It uses Mobilenet CNN for feature extraction and Anrtitficial Neural Network to classify the skin condition into three categories: Common Nevus, Atypical Nevus, and Melanoma based on the extracted features. The app also provides a severity level and recommendations based on the prediction.
 
 ## Features ✨
 
